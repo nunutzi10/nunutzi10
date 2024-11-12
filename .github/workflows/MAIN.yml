@@ -1,4 +1,14 @@
-runs-on: ubuntu-latest
+name: Generate Snake
+
+on:
+  schedule:
+      # every 6 hours
+    - cron: "0 */6 * * *"
+workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
 # Steps represent a sequence of tasks that will be executed as part of the job
 steps:
